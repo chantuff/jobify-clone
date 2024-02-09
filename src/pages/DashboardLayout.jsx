@@ -4,7 +4,7 @@ import { BigSidebar, NavBar, SmallSidebar } from "../components";
 import { createContext, useContext, useState } from "react";
 
 
-const DashbordContext = createContext()
+const DashboardContext = createContext()
 
 const DashboardLayout = () => {
   // temp
@@ -25,7 +25,7 @@ const DashboardLayout = () => {
   }
 
   return (
-    <DashbordContext.Provider value={{user, showSidebar, isDarkTheme, toggleDarkTheme, logoutUser}}>
+    <DashboardContext.Provider value={{user, showSidebar, isDarkTheme, toggleDarkTheme, logoutUser}}>
     <Wrapper>
       <main className="dashboard">
         <SmallSidebar />
@@ -38,8 +38,8 @@ const DashboardLayout = () => {
         </div>
       </main>
     </Wrapper>
-    </DashbordContext.Provider>
+    </DashboardContext.Provider>
   );
 };
-export const useDashbordContext = () => useContext (DashbordContext);
+export const useDashboardContext = () => useContext (DashboardContext);
 export default DashboardLayout;

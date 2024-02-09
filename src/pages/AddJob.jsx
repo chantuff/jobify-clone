@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddJob = () => {
   return (
-    <h1>AddJob Page</h1>
+    <h1>AddJob</h1>
   )
 }
 
